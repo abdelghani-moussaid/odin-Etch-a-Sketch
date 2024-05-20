@@ -10,3 +10,11 @@ for(let i = 0; i < 16; i++){
     }   
     container.appendChild(div);
 }
+
+const items = document.querySelectorAll(".items");
+
+items.forEach(item => {
+    item.addEventListener("mouseover", () => {
+        item.style.backgroundColor = "orange";
+    });   
+});
